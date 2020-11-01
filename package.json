@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cities.json": "^1.1.5",
+    "country-json": "^1.1.0",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "mongoose": "^5.10.11"
