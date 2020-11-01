@@ -3,6 +3,7 @@ const hbs = require("hbs");
 const path = require("path");
 
 const homeRouter = require("../routes/home.routes");
+const weatherRouter = require("../routes/weather.routes");
 
 const app = express();
 
@@ -16,5 +17,6 @@ app.set("views", path.join(__dirname, "../views"));
 
 // Setting to use routes
 app.use("/", homeRouter);
+app.use("/", weatherRouter);
 
 module.exports = app;

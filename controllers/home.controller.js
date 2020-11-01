@@ -8,7 +8,6 @@ exports.renderIndex = (req, res) => {
     if(a.name > b.name) { return 1; }
     return 0;
 })
-console.log(sortedCities[0])
 //map country name to cities
  const citiesAndCountries = sortedCities.map(city => {
    const country = countries.find( country => city.country === country.abbreviation)
@@ -19,7 +18,7 @@ console.log(sortedCities[0])
      lat: city.lat
    }
  });
-console.log(citiesAndCountries[0])
-    res.render("index", {cities: citiesAndCountries});
+
+  res.render("index", {cities: citiesAndCountries});
   };
   
